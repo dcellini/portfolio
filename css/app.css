@@ -1,0 +1,110 @@
+body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata', 'arial'; }
+
+.row {
+  max-width: none;
+  padding-left: 4rem;
+  padding-right: 4rem; }
+  .row.about-me {
+    padding-bottom: 4rem; }
+  .row .row {
+    padding-left: 0;
+    padding-right: 0; }
+
+.social a {
+  font-size: 35px;
+  padding: 0 20px;
+  color: #000; }
+
+.main-left p {
+  text-align: justify;
+  font-size: 1.1rem; }
+
+.main-middle {
+  text-align: center; }
+  .main-middle h1 {
+    text-align: center; }
+  .main-middle img {
+    display: block;
+    margin: auto;
+    width: 200px; }
+
+.viewPortfolioLink {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .viewPortfolioLink .column {
+    text-align: center; }
+  .viewPortfolioLink a {
+    text-align: center;
+    display: inline-block;
+    font-weight: 700; }
+    .viewPortfolioLink a div {
+      display: table; }
+      .viewPortfolioLink a div span {
+        display: table-cell;
+        vertical-align: middle; }
+      .viewPortfolioLink a div .portfolio-text {
+        font-size: 1.6rem;
+        padding-right: 10px; }
+      .viewPortfolioLink a div .fa-laptop {
+        font-size: 5rem; }
+    .viewPortfolioLink a .fa-chevron-down {
+      display: block;
+      font-size: 2.5rem;
+      position: relative;
+      top: -20px; }
+
+.location {
+  margin-bottom: 1rem; }
+  .location span {
+    padding-right: 20px; }
+
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0; }
+  header img {
+    width: 150px;
+    display: inline-block; }
+  header .right-container {
+    float: right; }
+  header .location {
+    margin-bottom: 1rem; }
+    header .location span {
+      padding-right: 20px; }
+
+.myportfolio .column > a {
+  display: block; }
+  .myportfolio .column > a img {
+    display: block;
+    border-left: 50px solid black;
+    border-right: 50px solid black;
+    border-top: 40px solid black;
+    border-bottom: 40px solid black;
+    border-radius: 5%; }
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent #999 transparent transparent !important; }
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #999 !important; }
+
+.main-right p {
+  font-size: 1.1rem; }
+.main-right .skills {
+  margin: 0; }
+  .main-right .skills li {
+    list-style-type: none;
+    display: table;
+    font-size: 1.2rem;
+    padding: 5px 0; }
+    .main-right .skills li span {
+      display: table-cell;
+      font-size: 1.1rem; }
+    .main-right .skills li .fa {
+      padding-right: 10px; }
+
+/*# sourceMappingURL=app.css.map */

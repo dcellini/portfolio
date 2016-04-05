@@ -1,0 +1,190 @@
+// #fullpage {
+// 	.fp-section {
+// 		.fp-tableCell {
+// 			vertical-align: middle !important;
+// 		}
+// 	}
+// 	.fp-section:first-of-type {
+// 		.fp-tableCell {
+// 			vertical-align: top !important;
+// 		}
+// 	}
+
+// }
+
+body, p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Inconsolata', 'arial';
+	// font-weight: 700;
+}
+
+.row {
+	max-width: none;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	&.about-me {
+		padding-bottom: 4rem;
+	}
+	.row {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.social {
+	// text-align: center;
+	// text-align: right;
+	// margin-bottom: 5rem;
+	a {
+		font-size: 35px;
+		padding: 0 20px;
+		color: #000;
+	}
+}
+.main-left {
+	p {
+		text-align: justify;
+		font-size: 1.1rem;
+	}
+}
+.main-middle {
+	text-align: center;
+	h1 {
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: auto;
+		width: 200px;
+	}
+}
+
+.viewPortfolioLink {
+	position:absolute;
+	left:0;
+	right: 0;
+	bottom: 0;
+	.column {
+		text-align: center;
+	}
+		a {
+			text-align: center;
+			display: inline-block;
+			font-weight: 700;
+			div {
+				display: table;
+				span {
+					display: table-cell;
+					vertical-align: middle;
+				}
+				.portfolio-text {
+					font-size: 1.6rem;
+					padding-right: 10px;
+				}
+				.fa-laptop {
+					font-size: 5rem;
+				}
+			}
+			.fa-chevron-down {
+				display: block;
+				font-size: 2.5rem;
+				position: relative; 
+				top: -20px;
+			}
+		}
+	// }
+}
+
+	.location {
+		// position: relative;
+		// right: 20px;
+		margin-bottom: 1rem;
+		span {
+			padding-right: 20px;
+		}
+	}
+
+header {
+	// position: absolute;
+	width: 100%;
+	// background: red;
+	top: 0;
+	left: 0;
+	right: 0;
+	img {
+		width: 150px;
+		display: inline-block;
+	}
+	h1, h3 {
+		// display: inline-block;
+	}
+	.right-container {
+		float: right;
+	}
+	.location {
+		// position: relative;
+		// right: 20px;
+		margin-bottom: 1rem;
+		span {
+			padding-right: 20px;
+		}
+	}
+}
+
+.myportfolio {
+	.column {
+		> a {
+			display: block;
+			img {
+				display: block;
+				border-left: 50px solid black;
+				border-right: 50px solid black;
+				border-top: 40px solid black;
+				border-bottom: 40px solid black;
+				border-radius: 5%;
+			}
+		}
+	}
+}
+
+.fp-controlArrow.fp-prev {
+	border-color: transparent #999 transparent transparent !important;
+}
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent #999 !important;
+}
+
+.main-right {
+	p {
+		font-size: 1.1rem;
+	}
+	.skills {
+		margin: 0;
+		li {
+			list-style-type: none;
+			display: table;
+			font-size: 1.2rem;
+			padding: 5px 0;
+			span {
+				display: table-cell;
+				font-size: 1.1rem;
+				// vertical-align: middle;
+			}
+			.fa {
+				padding-right: 10px;
+			}
+		}
+	}
+}
+
+
+// .about-me-section {
+// background: rgba(179,220,237,1);
+// background: -moz-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(255,255,255,1) 100%);
+// background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179,220,237,1)), color-stop(100%, rgba(255,255,255,1)));
+// background: -webkit-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(255,255,255,1) 100%);
+// background: -o-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(255,255,255,1) 100%);
+// background: -ms-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(255,255,255,1) 100%);
+// background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, rgba(255,255,255,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#ffffff', GradientType=0 );
+// }
