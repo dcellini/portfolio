@@ -29,32 +29,25 @@ body, p, h1, h2, h3, h4, h5, h6 {
     margin: auto;
     width: 200px; }
 
-.viewPortfolioLink {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  .viewPortfolioLink .column {
-    text-align: center; }
-  .viewPortfolioLink a {
-    text-align: center;
-    display: inline-block;
-    font-weight: 700; }
-    .viewPortfolioLink a div {
-      display: table; }
-      .viewPortfolioLink a div span {
-        display: table-cell;
-        vertical-align: middle; }
-      .viewPortfolioLink a div .portfolio-text {
-        font-size: 1.6rem;
-        padding-right: 10px; }
-      .viewPortfolioLink a div .fa-laptop {
-        font-size: 5rem; }
-    .viewPortfolioLink a .fa-chevron-down {
-      display: block;
-      font-size: 2.5rem;
-      position: relative;
-      top: -20px; }
+.viewPortfolioLink a {
+  text-align: center;
+  display: inline-block;
+  font-weight: 700; }
+  .viewPortfolioLink a div {
+    display: table; }
+    .viewPortfolioLink a div span {
+      display: table-cell;
+      vertical-align: middle; }
+    .viewPortfolioLink a div .portfolio-text {
+      font-size: 1.6rem;
+      padding-right: 10px; }
+    .viewPortfolioLink a div .fa-laptop {
+      font-size: 5rem; }
+  .viewPortfolioLink a .fa-chevron-down {
+    display: block;
+    font-size: 2.5rem;
+    position: relative;
+    top: -20px; }
 
 .location {
   margin-bottom: 1rem; }

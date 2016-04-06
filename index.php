@@ -28,127 +28,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
 
         <div id="fullpage">  
             <div class="section about-me-section">
-<!--                 <header class="fixedHeader"> -->
-                    <div class="row align-top">
-                        <div class="column large-4">
-            <!--                 <img src="img/profile.png" class="profile-image" alt="Profile image of David Cellini"> -->
-                            <h1>David Cellini</h1>
-                            <h3>Web Developer</h3>
-                            <h5 class="location"><span class="fa fa-map-marker"></span>Washington, Tyne and Wear</h5>
-                            <div class="social">
-                                <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-twitter"></span></a>
-                                <a href="http://uk.linkedin.com/in/davidcellini/en"><span class="fa fa-fw fa-linkedin"></span></a>
-                                <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-envelope"></span></a>
-                            </div>
-                        </div>
-                        <div class="column large-8">
-                            <h3>About Me</h3>                      
-                            <p>My name is David Cellini and I am a Front End Web Developer based in Washington, Tyne and Wear.</p>
-                            <p>I have two years experience as a Web Developer with Leighton. In that time I've worked with some pretty big clients including creating the website for Home Group and ATG tickets (soon to go live) and working with BA and Iberia.</p>
-                            <p>I have also been working in Digital for some time now. In addition I have over 6 years experience as a Digital Content Editor. I was responsible for the websites and content of 7 radio stations at Real and Smooth Radio.</p>    
-                            <p>I've always enjoyed the more technical side of the Web and love learning new languages and skills that make me a better developer.</p>  
-
-                            <h3>My Skills</h3>
-                            <p>HTML5 / CSS / Javascript / Jquery / PHP / MYSQL / XML / XSLT / AGILE / SASS / Premiere / Audition / Photoshop / SEO / Google Analytics / Digital Content / Foundation / Git / Accessibility</p>
-<!--                         <div class="row">
-                            <div class="column small-12 large-5">
-                                <ul class="skills">
-                                    <li><span class="fa fa-star-o"></span><span>HTML5</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>CSS 3</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Javascript</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>JQuery</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>PHP</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>MYSQL</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>XML/XSLT</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Agile</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>SASS</span></li>
-                                </ul>
-                            </div>
-                            <div class="column small-12 large-7">
-                                <ul class="skills">
-                                    <li><span class="fa fa-star-o"></span><span>Premiere</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Audition</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Photoshop</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>SEO</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Google Analytics</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Digital Content</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Foundation</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Git</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Accessibility</span></li>
-                                </ul>
-                            </div>
-                        </div> -->
-                        </div>  
-                    </div>
-       <!--          </header> -->
-        <!--         <header class="fixedHeader">
-                    <h1 class="fixedHeader-name"><a href="#aboutme">David Cellini</a></h1>
-                    <ul class="fixedHeader-navigation">
-                        <li data-menuanchor="aboutme" class="active">
-                            <a href="#aboutme">
-                                <i class="icon-male"></i>
-                                <span class="navName">About Me</span>
-                            </a>
-                        </li>
-                        <li data-menuanchor="portfolio">
-                            <a href="#portfolio">
-                                <i class="icon-briefcase"></i>
-                                <span class="navName">My Work</span>
-                            </a>
-                        </li>
-                        <li data-menuanchor="contact">
-                            <a href="#contact">
-                                <i class="icon-mail-alt"></i>
-                                <span class="navName">Contact Me</span>
-                            </a>
-                        </li>
-                    </ul>
-                </Header> -->
-<!--                 <header>
-                    <div class="row">
-                        <div class="column large-6">
-                            <img src="img/profile.png" class="profile-image" alt="Profile image of David Cellini">
-                            <h1>David Cellini</h1>
-                        </div>
-                        <div class="column large-6">
-                            <div class="social">
-                                <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-twitter"></span></a>
-                                <a href="http://uk.linkedin.com/in/davidcellini/en"><span class="fa fa-fw fa-linkedin"></span></a>
-                                <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-envelope"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="aboutTitleText">
-                            <p class="titleName">David Cellini</p>
-                            <p class="titleRole">Web Developer</p>
-                            <div class="social">
-                                <a href="http://www.twitter.com/dcellini"><span class="icon twitter"></span></a>
-                                <a href="http://uk.linkedin.com/in/davidcellini/en"><span class="icon linkedin"></span></a>
-                            </div>
-                        </div>
-                </header> -->
-               <!--  <div class="row about-me"> -->
-<!--                     <div class="column small-12 large-3">
-                        <img src="img/profile.png" class="profile-image" alt="Profile image of David Cellini">
-                        <div class="aboutTitleText">
-                            <p class="titleName">David Cellini</p>
-                            <p class="titleRole">Web Developer</p>
-                            <div class="social">
-                                <a href="http://www.twitter.com/dcellini"><span class="icon twitter"></span></a>
-                                <a href="http://uk.linkedin.com/in/davidcellini/en"><span class="icon linkedin"></span></a>
-                            </div>
-                        </div>
-                    </div> -->
-<!--                     <div class="column small-12 large-7 main-left small-order-2 large-order-1">
-                        <h3>About Me</h3>                      
-                        <p>My name is David Cellini and I am a Front End Web Developer based in Washington, Tyne and Wear.</p>
-                        <p>I have two years experience as a Web Developer with Leighton. In that time I've worked with some pretty big clients including creating the website for Home Group and ATG tickets (soon to go live) and working with BA and Iberia.</p>
-                        <p>I have also been working in Digital for some time now. In addition I have over 6 years experience as a Digital Content Editor. I was responsible for the websites and content of 7 radio stations at Real and Smooth Radio.</p>    
-                        <p>I've always enjoyed the more technical side of the Web and love learning new languages and skills that make me a better developer.</p>    
-                    </div> -->
-<!--                     <div class="column small-12 large-4 main-middle align-middle small-order-1 large-order-2">
-                        <img src="img/profile.png" class="profile-image" alt="Profile image of David Cellini">
+                <div class="row align-top">
+                    <div class="column large-4">
+        <!--                 <img src="img/profile.png" class="profile-image" alt="Profile image of David Cellini"> -->
                         <h1>David Cellini</h1>
+                        <h3>Web Developer</h3>
+                        <h5 class="location"><span class="fa fa-map-marker"></span>Washington, Tyne and Wear</h5>
                         <div class="social">
                             <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-twitter"></span></a>
                             <a href="http://uk.linkedin.com/in/davidcellini/en"><span class="fa fa-fw fa-linkedin"></span></a>
@@ -161,54 +46,21 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                                     <span class="fa fa-laptop"></span>
                                 </div>
                                 <div class="fa fa-chevron-down"></div>
-                            </a> 
+                            </a>    
                         </div>
-                    </div> -->
-<!--                     <div class="column small-12 large-5 small-order-3 large-order-3 main-right">
-                        <h3>My Skills</h3>
-                        <p>I have experience with the following:</p> 
-                        <div class="row">
-                            <div class="column small-12 large-5">
-                                <ul class="skills">
-                                    <li><span class="fa fa-star-o"></span><span>HTML5</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>CSS 3</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Javascript</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>JQuery</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>PHP</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>MYSQL</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>XML/XSLT</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Agile</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>SASS</span></li>
-                                </ul>
-                            </div>
-                            <div class="column small-12 large-7">
-                                <ul class="skills">
-                                    <li><span class="fa fa-star-o"></span><span>Premiere</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Audition</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Photoshop</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>SEO</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Google Analytics</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Digital Content</span></li>
-                                    <li><span class="fa fa-star-o"></span><span>Foundation</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Git</span></li> 
-                                    <li><span class="fa fa-star-o"></span><span>Accessibility</span></li>
-                                </ul>
-                            </div>
-                        </div> -->
-              <!--       </div>
-                </div> -->
-            
-                <div class="row viewPortfolioLink">
-                    <div class="column">
-                        <a href="#portfolio">
-                            <div>
-                                <span class="portfolio-text">View my portfolio</span>
-                                <span class="fa fa-laptop"></span>
-                            </div>
-                            <div class="fa fa-chevron-down"></div>
-                        </a>    
                     </div>
+                    <div class="column large-8">
+                        <h3>About Me</h3>                      
+                        <p>My name is David Cellini and I am a Front End Web Developer based in Washington, Tyne and Wear.</p>
+                        <p>I have two years experience as a Web Developer with Leighton. In that time I've worked with some pretty big clients including creating the website for Home Group and ATG tickets (soon to go live) and working with BA and Iberia.</p>
+                        <p>I have also been working in Digital for some time now. In addition I have over 6 years experience as a Digital Content Editor. I was responsible for the websites and content of 7 radio stations at Real and Smooth Radio.</p>    
+                        <p>I've always enjoyed the more technical side of the Web and love learning new languages and skills that make me a better developer.</p>  
+
+                        <h3>My Skills</h3>
+                        <p>HTML5 / CSS / Javascript / Jquery / PHP / MYSQL / XML / XSLT / AGILE / SASS / Premiere / Audition / Photoshop / SEO / Google Analytics / Digital Content / Foundation / Git / Accessibility</p>
+                    </div>  
                 </div>
+
 
             </div> <!-- End Section Div -->
 

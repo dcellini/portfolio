@@ -59,39 +59,31 @@ body, p, h1, h2, h3, h4, h5, h6 {
 }
 
 .viewPortfolioLink {
-	position:absolute;
-	left:0;
-	right: 0;
-	bottom: 0;
-	.column {
+	a {
 		text-align: center;
-	}
-		a {
-			text-align: center;
-			display: inline-block;
-			font-weight: 700;
-			div {
-				display: table;
-				span {
-					display: table-cell;
-					vertical-align: middle;
-				}
-				.portfolio-text {
-					font-size: 1.6rem;
-					padding-right: 10px;
-				}
-				.fa-laptop {
-					font-size: 5rem;
-				}
+		display: inline-block;
+		font-weight: 700;
+		div {
+			display: table;
+			span {
+				display: table-cell;
+				vertical-align: middle;
 			}
-			.fa-chevron-down {
-				display: block;
-				font-size: 2.5rem;
-				position: relative; 
-				top: -20px;
+			.portfolio-text {
+				font-size: 1.6rem;
+				padding-right: 10px;
+			}
+			.fa-laptop {
+				font-size: 5rem;
 			}
 		}
-	// }
+		.fa-chevron-down {
+			display: block;
+			font-size: 2.5rem;
+			position: relative; 
+			top: -20px;
+		}
+	}
 }
 
 	.location {
