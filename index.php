@@ -28,8 +28,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
 
         <div id="fullpage">  
             <div class="section about-me-section">
-                <div class="row align-top">
-                    <div class="column large-4">
+                <div class="row align-middle">
+                    <div class="column large-5 profile-box">
         <!--                 <img src="img/profile.png" class="profile-image" alt="Profile image of David Cellini"> -->
                         <h1>David Cellini</h1>
                         <h3>Web Developer</h3>
@@ -37,7 +37,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="social">
                             <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-twitter"></span></a>
                             <a href="http://uk.linkedin.com/in/davidcellini/en"><span class="fa fa-fw fa-linkedin"></span></a>
-                            <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-envelope"></span></a>
+                            <a href="#contact" ><span class="fa fa-fw fa-envelope"></span></a>
+
                         </div>
                         <div class="viewPortfolioLink">
                             <a href="#portfolio">
@@ -49,7 +50,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                             </a>    
                         </div>
                     </div>
-                    <div class="column large-8">
+                    <div class="column large-7">
                         <h3>About Me</h3>                      
                         <p>My name is David Cellini and I am a Front End Web Developer based in Washington, Tyne and Wear.</p>
                         <p>I have two years experience as a Web Developer with Leighton. In that time I've worked with some pretty big clients including creating the website for Home Group and ATG tickets (soon to go live) and working with BA and Iberia.</p>
@@ -85,7 +86,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="row">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/atg.jpg" alt="Iberia Styled Form"></a>    
-                                <p>December 2015 - Apr 2016</p>                 
+                                <p><strong>Date Worked On:</strong> December 2015 - Apr 2016</p>          
                             </div>      
                             <div class="column small-12 large-6">     
                                 <h2>ATG Tickets</h2>           
@@ -102,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="row">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/homegroup.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
-                                <p>August 2014 - December 2015</p>
+                                <p><strong>Date Worked On:</strong>August 2014 - December 2015</p>
                             </div>      
                             <div class="column small-12 large-6">     
                                 <h2>Home Group</h2>           
@@ -118,7 +119,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="row">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/homegroup80.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
-                                <p>November 2015 - December 2015</p>
+                                <p><strong>Date Worked On:</strong>November 2015 - December 2015</p>
                             </div>      
                             <div class="column small-12 large-6">     
                                 <h2>Home Group 80th Birthday microsite</h2>           
@@ -134,7 +135,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="row">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/homegroupintranet.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
-                                <p>November 2015 - December 2015</p>
+                                <p<strong>Date Worked On:</strong>>November 2015 - December 2015</p>
                             </div>      
                             <div class="column small-12 large-6">     
                                 <h2>Home Group Intranet</h2>           
@@ -150,7 +151,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="row">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/iberia.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
-                                <p>November 2015 - December 2015</p>
+                                <p><strong>Date Worked On:</strong>November 2015 - December 2015</p>
                             </div>      
                             <div class="column small-12 large-6">  
                                 <h2>Iberia Email Templates</h2>    
@@ -166,7 +167,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="row">
                             <div class="column small-12 large-6">
                                  <a href="http://www.britishairways.com/en-gb/information/passports-visas-and-api?source=MNVINF3passports_visas&amp;link=main_nav"><img src="img/ba.jpg" class="portfolio-image" alt="BA Visas and Passport page"></a>   
-                                <p>June 2014 - Ongoing</p>
+                                <p><strong>Date Worked On:</strong>June 2014 - Ongoing</p>
                             </div>      
                             <div class="column small-12 large-6">     
                                 <h2>British Airways</h2>
@@ -263,34 +264,63 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="formdata" <?php if(isset($formdata)) { ?> id="success" <?php }; ?> >
                             <?php if(isset($formdata)) {echo $formdata;} ?>
                         </div>
-                        <h1>Contact Me</h1>
-                        <p>If there's something you want to know about me or you want to hire me, just get in touch using the form below. </p>
-                        <form class="ContactForm" method="post" action="index.php#contact" onSubmit="return formValidate(this)">
-                            <ol>
-                                <li>
-                                    <label>Name
-                                        <span id="name_fback"></span>
-                                        <input type="text" id="name" value="<?php if(isset($name)) { echo $name;} ?>" name="name">
-                                    </label>
-                                </li>                                      
-                                <li>
-                                    <label>Email
-                                        <span id="email_fback"></span>
-                                        <input type="text" id="email" value="<?php if(isset($email)) { echo $email;} ?>" name="email" >
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>Message
-                                        <span id="textarea_fback"></span>
-                                        <textarea id="textarea" name="textarea" cols="10" rows="8"><?php if(isset($textarea)) { echo $textarea;} ?></textarea>
-                                      <!--   <span id="charsLeft"></span> -->
-                                    </label>
-                                </li>
-                                <li>
-                                    <input id="formSubmit" type="submit" value="Send your message">   
-                                </li>
-                            </ol>
-                        </form>
+
+                        <div class="row">
+                            <div class="column small-12">
+                                <h1>Contact Me</h1>
+                                <p>If there's something you want to know about me or you want to hire me, just get in touch using the form below. </p>
+                                <form class="ContactForm" method="post" action="index.php#contact" onSubmit="return formValidate(this)">
+                                    <div class="row">
+                                        <div class="small-12 large-6 columns">                            
+                                            <div class="row">
+                                                <div class="column small-12 large-12">
+                                                    <label for"name">Name</label> 
+                                                </div>
+                                                <div class="column small-12 large-12">
+                                                    <input type="text" id="name" value="<?php if(isset($name)) { echo $name;} ?>" name="name">
+                                                </div>
+                                                <div class="column small-12 large-12">
+                                                    <span class="feedback" id="name_fback">&nbsp;</span>
+                                                </div>
+                                            </div>           
+                                            <div class="row">
+                                                <div class="column small-12 large-12">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                                <div class="column small-12 large-12">
+                                                    <input type="text" id="email" value="<?php if(isset($email)) { echo $email;} ?>" name="email" >
+                                                </div>
+                                                <div class="column small-12 large-12">
+                                                    <span class="feedback" id="email_fback">&nbsp;</span>
+                                                </div>
+                                            </div> 
+                                        </div>      
+                                        <div class="small-12 large-6 columns">                                            
+                                            <div class="row">
+                                                <div class="column small-12 large-12">
+                                                    <label for="textarea">Message</label>
+                                                </div>
+                                                <div class="column small-12 large-12">
+                                                    <textarea id="textarea" name="textarea" rows="6"><?php if(isset($textarea)) { echo $textarea;} ?></textarea>
+                                                </div>
+                                                <div class="column small-12 large-12">
+                                                    <span class="feedback" id="textarea_fback">&nbsp;</span>
+                                                </div>
+                                                <div class="column small-12 large-12">
+                                                </div>
+                                            </div>   
+                                        </div>                                                 
+                                        <div class="small-12 columns form-submit">
+                                            <input class="button" id="formSubmit" type="submit" value="Send your message">
+                                        </div>
+                                                  <!--   <span id="charsLeft"></span> -->
+                                        
+                                    </div>
+                                </form>
+
+                            </div> <!-- End column -->
+                        </div> <!-- End Row -->
+
                         
                     </div>
                 </div> <!-- End Section Div -->
@@ -299,7 +329,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
         <script src="js/jquery.slimscroll.js"></script>
         <script src="js/jquery.fullPage.js"></script>
         <script src="js/foundation.js"></script>
-        <script>"use strict";function formValidate(){var e="",r="",a="",n=document.getElementById("name").value,t=document.getElementById("email").value,l=document.getElementById("textarea").value,d=document.getElementById("name_fback"),m=document.getElementById("email_fback"),o=document.getElementById("textarea_fback");return""===l.trim()||null===l.trim()?($("#textarea").addClass("borderError").focus(),a="[Enter a message]",o.innerHTML=a):($("#textarea").removeClass("borderError").blur(),o.innerHTML=""),""===t||null===t?($("#email").addClass("borderError").focus(),r="[Enter an email address]",m.innerHTML=r):/^[_a-z0-9\-]+(\.[_a-z0-9\-]+)*@[a-z0-9\-]+(\.[a-z0-9\-]+)*(\.[a-z]{2,4})$/.test(t)?($("#email").removeClass("borderError").blur(),m.innerHTML=""):(r="[Enter a valid email]",m.innerHTML=r,$("#email").addClass("borderError").focus()),""===n||null===n?($("#name").addClass("borderError").focus(),e="[Enter a name]",d.innerHTML=e):($("#name").removeClass("borderError").blur(),d.innerHTML=""),""!==e||""!==r||""!==a?!1:($(".formdata").addClass("success"),!0)}</script>
+        <script src="js/app.js"></script>
+        <script>
+        // "use strict";function formValidate(){var e="",r="",a="",n=document.getElementById("name").value,t=document.getElementById("email").value,l=document.getElementById("textarea").value,d=document.getElementById("name_fback"),m=document.getElementById("email_fback"),o=document.getElementById("textarea_fback");return""===l.trim()||null===l.trim()?($("#textarea").addClass("borderError").focus(),a="[Enter a message]",o.innerHTML=a):($("#textarea").removeClass("borderError").blur(),o.innerHTML=""),""===t||null===t?($("#email").addClass("borderError").focus(),r="[Enter an email address]",m.innerHTML=r):/^[_a-z0-9\-]+(\.[_a-z0-9\-]+)*@[a-z0-9\-]+(\.[a-z0-9\-]+)*(\.[a-z]{2,4})$/.test(t)?($("#email").removeClass("borderError").blur(),m.innerHTML=""):(r="[Enter a valid email]",m.innerHTML=r,$("#email").addClass("borderError").focus()),""===n||null===n?($("#name").addClass("borderError").focus(),e="[Enter a name]",d.innerHTML=e):($("#name").removeClass("borderError").blur(),d.innerHTML=""),""!==e||""!==r||""!==a?!1:($(".formdata").addClass("success"),!0)}
+        </script>
         <script>
             $(document).ready(function() {
                 $('#fullpage').fullpage( {
@@ -311,7 +344,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     resize: false,
                     animateAnchor: false,
         // navigation: true,
-        slidesNavigation: true,       slidesNavPosition: 'bottom',
+        slidesNavigation: true,       slidesNavPosition: 'top',
         slideTooltips: ["ATG", "Home Group", "Home Group 80th Birthday", "Home Group Intranet", "Iberia", "slide 2", "slide 3", "slide 4", "slide 9", "slide 4", "slide 9"]
                 });
              });            

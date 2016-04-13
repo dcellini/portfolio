@@ -2194,7 +2194,7 @@
         * Creates a landscape navigation bar with dots for horizontal sliders.
         */
         function addSlidesNavigation(section, numSlides){
-            section.append('<div class="' + SLIDES_NAV + '"><ul></ul></div>');
+            section.append('<div class="' + SLIDES_NAV + '"><span class="nav-header">Portfolio Quick Links</span><ul></ul></div>');
             var nav = section.find(SLIDES_NAV_SEL);
 
             //top or bottom
@@ -2219,7 +2219,7 @@
 
                 nav.find('ul').append(li);
             }
-            
+
             //centering it
             nav.css('margin-left', '-' + (nav.width()/2) + 'px');
 
