@@ -1,9 +1,7 @@
 $(document).foundation();
 
-/*jslint node: true */
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
-"use strict";
+
+
 function formValidate() {
     var nameError = "",
         emailError = "",
@@ -56,3 +54,4 @@ function formValidate() {
     $(".formdata").addClass("success");
     return true;
 }
+

@@ -19,17 +19,34 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
     </head>
 
     <body>
-
-
- <!--        <div class="toggleHeader">
-            <i class="icon-minus-squared"></i>
-            <i class="icon-plus-squared"></i>
-        </div> -->
-
+<!--         <nav id="myMenu">
+            <div class="row">
+                <div class="small-12 column">
+                    <ul >
+                        <li data-menuanchor="aboutmePage" class="active"><a href="#aboutmePage">About Me</a></li><span> /</span>
+                        <li data-menuanchor="portfolioPage"><a href="#portfolioPage">Portfolio</a></li><span> /</span>
+                        <li data-menuanchor="contactPage"><a href="#contactPage">Contact Me</a></li>                
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+<!--                                     <nav class="myMenu">
+            <div class="row">
+                <div class="small-12 column">
+                    <ul >
+                        <li data-menuanchor="aboutmePage" class="active"><a href="#aboutmePage">About Me</a></li><span> /</span>
+                        <li data-menuanchor="portfolioPage"><a href="#portfolioPage">Portfolio</a></li><span> /</span>
+                        <li data-menuanchor="contactPage"><a href="#contactPage">Contact Me</a></li>                
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
         <div id="fullpage">  
+
             <div class="section about-me-section">
+
                 <div class="row align-middle">
-                    <div class="column large-5 profile-box">
+                    <div class="column small-12 large-5 profile-box">
         <!--                 <img src="img/profile.png" class="profile-image" alt="Profile image of David Cellini"> -->
                         <h1>David Cellini</h1>
                         <h3>Web Developer</h3>
@@ -37,20 +54,20 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                         <div class="social">
                             <a href="http://www.twitter.com/dcellini"><span class="fa fa-fw fa-twitter"></span></a>
                             <a href="http://uk.linkedin.com/in/davidcellini/en"><span class="fa fa-fw fa-linkedin"></span></a>
-                            <a href="#contact" ><span class="fa fa-fw fa-envelope"></span></a>
+                            <a href="#contactPage" ><span class="fa fa-fw fa-envelope"></span></a>
 
                         </div>
                         <div class="viewPortfolioLink">
-                            <a href="#portfolio">
+                            <a href="#portfolioPage">
                                 <div>
                                     <span class="portfolio-text">View my portfolio</span>
                                     <span class="fa fa-laptop"></span>
                                 </div>
-                                <div class="fa fa-chevron-down"></div>
+                   <!--              <div class="fa fa-chevron-down"></div> -->
                             </a>    
                         </div>
                     </div>
-                    <div class="column large-7">
+                    <div class="column small-12 large-7">
                         <h3>About Me</h3>                      
                         <p>My name is David Cellini and I am a Front End Web Developer based in Washington, Tyne and Wear.</p>
                         <p>I have two years experience as a Web Developer with Leighton. In that time I've worked with some pretty big clients including creating the website for Home Group and ATG tickets (soon to go live) and working with BA and Iberia.</p>
@@ -66,10 +83,20 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
             </div> <!-- End Section Div -->
 
                 <div class="section">
-
-<!--                     <div class="slide myportfolio">
-                        <div class="row">
-                            <div class="column small-12">
+    <!--     <nav >
+            <div class="row">
+                <div class="small-12 column">
+                    <ul class="myMenu">
+                        <li data-menuanchor="aboutmePage" class="active"><a href="#aboutmePage">About Me</a></li><span> /</span>
+                        <li data-menuanchor="portfolioPage"><a href="#portfolioPage">Portfolio</a></li><span> /</span>
+                        <li data-menuanchor="contactPage"><a href="#contactPage">Contact Me</a></li>                
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+                    <div class="slide myportfolio">
+                        <div class="row text-center">
+                            <div class="column">
 
                                 <div class="container portfolioMainLogo">
                                     <h1>Portfolio</h1>
@@ -80,10 +107,25 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                                 </div>  
                             </div>
                         </div>
-                    </div> -->
+                        
+                        <div class="row myportfolio">
+                            <div class="column large-4 medium-12">
+                                <a href="http://www.leighton.com"><img src="img/atg.jpg" alt="Iberia Styled Form"></a>
+                                <p><strong>ATG</strong></p> 
+                            </div>
+                            <div class="column large-4 medium-12">
+                                <a href="http://www.leighton.com"><img src="img/homegroup.jpg" alt="Iberia Styled Form"></a>
+                                <p><strong>Home Group</strong></p> 
+                            </div>
+                            <div class="column large-4 medium-12">
+                                <a href="http://www.leighton.com"><img src="img/homegroupintranet.jpg" alt="Iberia Styled Form"></a>
+                                <p><strong>Home Group Intranet</strong></p> 
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/atg.jpg" alt="Iberia Styled Form"></a>    
                                 <p><strong>Date Worked On:</strong> December 2015 - Apr 2016</p>          
@@ -100,7 +142,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/homegroup.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
                                 <p><strong>Date Worked On:</strong>August 2014 - December 2015</p>
@@ -116,7 +158,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/homegroup80.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
                                 <p><strong>Date Worked On:</strong>November 2015 - December 2015</p>
@@ -132,7 +174,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/homegroupintranet.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
                                 <p<strong>Date Worked On:</strong>>November 2015 - December 2015</p>
@@ -148,7 +190,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="http://www.leighton.com"><img src="img/iberia.jpg" class="portfolio-image" alt="Iberia Styled Form"></a>      
                                 <p><strong>Date Worked On:</strong>November 2015 - December 2015</p>
@@ -164,7 +206,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                  <a href="http://www.britishairways.com/en-gb/information/passports-visas-and-api?source=MNVINF3passports_visas&amp;link=main_nav"><img src="img/ba.jpg" class="portfolio-image" alt="BA Visas and Passport page"></a>   
                                 <p><strong>Date Worked On:</strong>June 2014 - Ongoing</p>
@@ -180,7 +222,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="http://www.thisisglobal.com/radio"><img src="img/realradio.jpg" class="portfolio-image" alt="Real Radio Website"></a>  
                                 <p>Feb 2008 - March 2014</p>
@@ -195,7 +237,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                               <a href="portfolio/spelling/index.htm" target="_blank" class="mylink"><img src="img/spelling.jpg" class="portfolio-image" alt="A spelling game I designed for my daughter"></a>   
                                 <p>March 2015</p>
@@ -211,7 +253,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="portfolio/galleryanimation/index.htm" target="_blank" class="mylink"><img src="img/gallery.jpg" class="portfolio-image" alt="My animated gallery design"></a>   
                                 <p>February 2015</p>
@@ -226,7 +268,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="portfolio/form/form.php" target="_blank" class="mylink"><img src="img/contact.jpg" class="portfolio-image" alt="My contact form I created"></a> 
                                 <p>January 2015</p>
@@ -242,7 +284,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                     </div>
 
                     <div class="slide myportfolio">
-                        <div class="row">
+                        <div class="row align-middle">
                             <div class="column small-12 large-6">
                                 <a href="shirts4mike/index.php" target="_blank" class="mylink"><img src="img/shirts4mike.jpg" class="portfolio-image" alt="The Shirts 4 Mike website I put together"></a>  
                                 <p>December 2014</p>
@@ -260,6 +302,17 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                 </div> <!-- End Section Div -->
 
                 <div class="section">
+<!--                             <nav class="myMenu">
+            <div class="row">
+                <div class="small-12 column">
+                    <ul >
+                        <li data-menuanchor="aboutmePage" class="active"><a href="#aboutmePage">About Me</a></li><span> /</span>
+                        <li data-menuanchor="portfolioPage"><a href="#portfolioPage">Portfolio</a></li><span> /</span>
+                        <li data-menuanchor="contactPage"><a href="#contactPage">Contact Me</a></li>                
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
                     <div class="container" id="contactme">
                         <div class="formdata" <?php if(isset($formdata)) { ?> id="success" <?php }; ?> >
                             <?php if(isset($formdata)) {echo $formdata;} ?>
@@ -271,7 +324,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                                 <p>If there's something you want to know about me or you want to hire me, just get in touch using the form below. </p>
                                 <form class="ContactForm" method="post" action="index.php#contact" onSubmit="return formValidate(this)">
                                     <div class="row">
-                                        <div class="small-12 large-6 columns">                            
+                                        <div class="small-12 medium-6 large-6 columns">                            
                                             <div class="row">
                                                 <div class="column small-12 large-12">
                                                     <label for"name">Name</label> 
@@ -295,7 +348,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
                                                 </div>
                                             </div> 
                                         </div>      
-                                        <div class="small-12 large-6 columns">                                            
+                                        <div class="small-12 medium-6 large-6 columns">                                            
                                             <div class="row">
                                                 <div class="column small-12 large-12">
                                                     <label for="textarea">Message</label>
@@ -337,24 +390,27 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){$formdata=$name=$email="";$error=array();
             $(document).ready(function() {
                 $('#fullpage').fullpage( {
                     // sectionsColor: ['#ffffff', '#ffffff', '#f2f2f2'],
-                    anchors: ['aboutme', 'portfolio', 'contact'],
-                    // menu: '.fixedHeader-navigation',
+                    anchors: ['aboutmePage', 'portfolioPage', 'contactPage'],
+                    // menu: '.myMenu',
                     scrollOverflow: true,
-                    // autoScrolling: true,
+                    autoScrolling: true,
                     resize: false,
-                    animateAnchor: false,
-        // navigation: true,
-        slidesNavigation: true,       slidesNavPosition: 'top',
-        slideTooltips: ["ATG", "Home Group", "Home Group 80th Birthday", "Home Group Intranet", "Iberia", "slide 2", "slide 3", "slide 4", "slide 9", "slide 4", "slide 9"]
+                    animateAnchor: true,
+                    navigation: true,
+                    // slidesNavigation: true,       
+                    // slidesNavPosition: 'bottom',
+                    // slideTooltips: ["ATG", "Home Group", "Home Group 80th Birthday", "Home Group Intranet", "Iberia", "slide 2", "slide 3", "slide 4", "slide 9", "slide 4", "slide 9"]
                 });
+                $(document).ready(function() {
+                    if($('#fp-nav').hasClass('right')) {
+                        $('#fp-nav.right').addClass("lead-nav");
+                        $('#fp-nav').prepend('<p class="nav-title">Nav</p>');
+                    }
+    
+    // alert('hi');
+});
              });            
 
-            /* Toggle the header bar on or off */
-            $(".toggleHeader").click(function() {
-                $(".fixedHeader").toggle();
-                $(".icon-minus-squared").toggle();
-                $(".icon-plus-squared").toggle();
-            });
 
             if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
     if (browserRatio >=1.5) {

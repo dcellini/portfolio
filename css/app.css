@@ -34,7 +34,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
   .viewPortfolioLink a {
     text-align: center;
     display: inline-block;
-    font-weight: 700; }
+    font-weight: 700;
+    border: 5px solid #2199e8;
+    padding: 10px; }
     .viewPortfolioLink a div {
       display: table; }
       .viewPortfolioLink a div span {
@@ -79,7 +81,8 @@ header {
     border-right: 50px solid black;
     border-top: 40px solid black;
     border-bottom: 40px solid black;
-    border-radius: 5%; }
+    border-radius: 5%;
+    padding: 5px; }
 
 .fp-controlArrow.fp-prev {
   border-color: transparent #999 transparent transparent !important; }
@@ -121,7 +124,7 @@ header {
   .fp-slidesNav ul li a {
     padding: 20px 40px; }
 
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+#fp-slidesNav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
   height: 20px;
   width: 20px;
   margin: -6px 0 0 -6px;
@@ -143,8 +146,7 @@ header {
   padding: 0 20px; }
 
 .fp-slidesNav.top {
-  top: 0;
-  left: -5000px; }
+  top: 0; }
 
 .ContactForm {
   font-size: 1.1rem; }
@@ -184,5 +186,22 @@ input[type="submit"] {
 #textarea_fback {
   position: relative;
   top: -7px; }
+
+nav {
+  position: relative;
+  top: 0; }
+  nav ul {
+    margin: 0;
+    list-style-type: none; }
+    nav ul li {
+      display: inline-block; }
+
+#fp-nav.right {
+  top: 50px; }
+
+.nav-title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 1.2rem; }
 
 /*# sourceMappingURL=app.css.map */
